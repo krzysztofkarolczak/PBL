@@ -1,0 +1,11 @@
+c:\users\bart\documents\visual studio 2010\Projects\KinectRecorder\KinectRecorder\bin\Debug\KinectRecorder.exe
+c:\users\bart\documents\visual studio 2010\Projects\KinectRecorder\KinectRecorder\bin\Debug\KinectRecorder.pdb
+c:\users\bart\documents\visual studio 2010\Projects\KinectRecorder\KinectRecorder\obj\x86\Debug\MainWindow.baml
+c:\users\bart\documents\visual studio 2010\Projects\KinectRecorder\KinectRecorder\obj\x86\Debug\MainWindow.g.cs
+c:\users\bart\documents\visual studio 2010\Projects\KinectRecorder\KinectRecorder\obj\x86\Debug\App.g.cs
+c:\users\bart\documents\visual studio 2010\Projects\KinectRecorder\KinectRecorder\obj\x86\Debug\KinectRecorder_MarkupCompile.cache
+c:\users\bart\documents\visual studio 2010\Projects\KinectRecorder\KinectRecorder\obj\x86\Debug\KinectRecorder.g.resources
+c:\users\bart\documents\visual studio 2010\Projects\KinectRecorder\KinectRecorder\obj\x86\Debug\KinectRecorder.Properties.Resources.resources
+c:\users\bart\documents\visual studio 2010\Projects\KinectRecorder\KinectRecorder\obj\x86\Debug\KinectRecorder.csproj.GenerateResource.Cache
+c:\users\bart\documents\visual studio 2010\Projects\KinectRecorder\KinectRecorder\obj\x86\Debug\KinectRecorder.exe
+c:\users\bart\documents\visual studio 2010\Projects\KinectRecorder\KinectRecorder\obj\x86\Debug\KinectRecorder.pdb

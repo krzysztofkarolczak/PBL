@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinectRecorder", "KinectRecorder\KinectRecorder.csproj", "{51D1BC5D-EB68-4C15-8505-3C61876E1CB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51D1BC5D-EB68-4C15-8505-3C61876E1CB5}.Debug|x86.ActiveCfg = Debug|x86
+		{51D1BC5D-EB68-4C15-8505-3C61876E1CB5}.Debug|x86.Build.0 = Debug|x86
+		{51D1BC5D-EB68-4C15-8505-3C61876E1CB5}.Release|x86.ActiveCfg = Release|x86
+		{51D1BC5D-EB68-4C15-8505-3C61876E1CB5}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
