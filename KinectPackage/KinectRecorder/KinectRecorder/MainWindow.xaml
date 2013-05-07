@@ -1,0 +1,10 @@
+﻿<Window x:Class="KinectRecorder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Loaded="WindowLoaded">
+    <Grid>
+        <Label Content="Kinect not connected" Height="22" HorizontalAlignment="Left" Margin="102,38,0,0" Name="label1" VerticalAlignment="Top" Width="256" />
+        <Button Content="Record / Stop" Height="31" HorizontalAlignment="Left" Margin="104,80,0,0" Name="button1" VerticalAlignment="Top" Width="173" Click="button1_Click" />
+        <Button Content="Open" Height="31" HorizontalAlignment="Left" Margin="104,179,0,0" Name="button2" VerticalAlignment="Top" Width="173" Click="button2_Click" />
+    </Grid>
+</Window>
