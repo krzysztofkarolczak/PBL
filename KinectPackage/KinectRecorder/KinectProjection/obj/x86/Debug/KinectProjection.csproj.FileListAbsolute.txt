@@ -1,7 +1,14 @@
 C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\bin\Debug\KinectProjection.exe
 C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\bin\Debug\KinectProjection.pdb
 C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\bin\Debug\KinectLib.dll
+C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\bin\Debug\MathNet.Numerics.dll
+C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\bin\Debug\MathNet.Numerics.IO.dll
 C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\bin\Debug\KinectLib.pdb
+C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\bin\Debug\MathNet.Numerics.pdb
+C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\bin\Debug\MathNet.Numerics.xml
+C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\bin\Debug\MathNet.Numerics.IO.pdb
+C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\bin\Debug\MathNet.Numerics.IO.xml
+C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\obj\x86\Debug\KinectProjection.csprojResolveAssemblyReference.cache
 C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\obj\x86\Debug\MainWindow.baml
 C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\obj\x86\Debug\MainWindow.g.cs
 C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\obj\x86\Debug\App.g.cs
@@ -11,4 +18,3 @@ C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\obj\x86\Debu
 C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\obj\x86\Debug\KinectProjection.csproj.GenerateResource.Cache
 C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\obj\x86\Debug\KinectProjection.exe
 C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\obj\x86\Debug\KinectProjection.pdb
-C:\Users\Bart\Desktop\KinectPackage\KinectRecorder\KinectProjection\obj\x86\Debug\KinectProjection.csprojResolveAssemblyReference.cache
