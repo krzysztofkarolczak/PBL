@@ -1,0 +1,15 @@
+C:\Users\Dev\Documents\Visual Studio 2010\Projects\KinectRecorder\KinectLib\bin\Debug\KinectLib.dll
+C:\Users\Dev\Documents\Visual Studio 2010\Projects\KinectRecorder\KinectLib\bin\Debug\KinectLib.pdb
+C:\Users\Dev\Documents\Visual Studio 2010\Projects\KinectRecorder\KinectLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dev\Documents\Visual Studio 2010\Projects\KinectRecorder\KinectLib\obj\Debug\KinectLib.dll
+C:\Users\Dev\Documents\Visual Studio 2010\Projects\KinectRecorder\KinectLib\obj\Debug\KinectLib.pdb
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectLib\bin\Debug\KinectLib.dll
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectLib\bin\Debug\KinectLib.pdb
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectLib\obj\Debug\KinectLib.dll
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectLib\obj\Debug\KinectLib.pdb
+C:\Users\Dev\Desktop\package\KinectRecorder\KinectLib\bin\Debug\KinectLib.dll
+C:\Users\Dev\Desktop\package\KinectRecorder\KinectLib\bin\Debug\KinectLib.pdb
+C:\Users\Dev\Desktop\package\KinectRecorder\KinectLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dev\Desktop\package\KinectRecorder\KinectLib\obj\Debug\KinectLib.dll
+C:\Users\Dev\Desktop\package\KinectRecorder\KinectLib\obj\Debug\KinectLib.pdb
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectLib\obj\Debug\KinectLib.csprojResolveAssemblyReference.cache

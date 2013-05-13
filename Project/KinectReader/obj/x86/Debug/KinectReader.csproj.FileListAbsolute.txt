@@ -1,0 +1,14 @@
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\bin\Debug\KinectReader.exe
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\bin\Debug\KinectReader.pdb
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\bin\Debug\KinectLib.dll
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\bin\Debug\KinectLib.pdb
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\obj\x86\Debug\KinectReader.csprojResolveAssemblyReference.cache
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\obj\x86\Debug\MainWindow.baml
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\obj\x86\Debug\MainWindow.g.cs
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\obj\x86\Debug\App.g.cs
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\obj\x86\Debug\KinectReader_MarkupCompile.cache
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\obj\x86\Debug\KinectReader.g.resources
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\obj\x86\Debug\KinectReader.Properties.Resources.resources
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\obj\x86\Debug\KinectReader.csproj.GenerateResource.Cache
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\obj\x86\Debug\KinectReader.exe
+C:\Users\nerkon\Desktop\package\KinectRecorder\KinectReader\obj\x86\Debug\KinectReader.pdb

@@ -1,0 +1,5 @@
+adres ip: kinectsrv.no-ip.biz:666
+nazwa uzytkownika: koniusrv\dev
+haslo: A#i3OBEE
+
+Na raz tylko jedna sesja, sesja nieaktywna wygasa po 15 min. Dla win vista i wyzej.
