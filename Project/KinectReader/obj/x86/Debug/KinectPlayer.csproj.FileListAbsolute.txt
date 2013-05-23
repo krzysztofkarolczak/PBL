@@ -41,3 +41,17 @@ C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectReader\obj\x86\Debug\KinectRead
 C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectReader\obj\x86\Debug\KinectReader.g.resources
 C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectReader\obj\x86\Debug\KinectReader.Properties.Resources.resources
 C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectReader\obj\x86\Debug\KinectPlayer.csproj.GenerateResource.Cache
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\obj\x86\Debug\KinectReader.exe
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\obj\x86\Debug\KinectReader.pdb
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\bin\Debug\KinectReader.exe
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\bin\Debug\KinectReader.pdb
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\bin\Debug\KinectLib.dll
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\bin\Debug\KinectLib.pdb
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\obj\x86\Debug\KinectPlayer.csprojResolveAssemblyReference.cache
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\obj\x86\Debug\MainWindow.baml
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\obj\x86\Debug\App.g.cs
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\obj\x86\Debug\KinectReader_MarkupCompile.cache
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\obj\x86\Debug\KinectReader.g.resources
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\obj\x86\Debug\KinectReader.Properties.Resources.resources
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectReader\obj\x86\Debug\KinectPlayer.csproj.GenerateResource.Cache
