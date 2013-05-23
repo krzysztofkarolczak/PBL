@@ -18,6 +18,7 @@ namespace KinectLib
       public double X;
       public double Y;
       public double Z;
+      public float[] Floor;
 
       public SkeletonFrame()
       {

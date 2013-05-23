@@ -74,3 +74,17 @@ C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecor
 C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.g.resources
 C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.Properties.Resources.resources
 C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.csproj.GenerateResource.Cache
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.csprojResolveAssemblyReference.cache
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\MainWindow.baml
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\App.g.cs
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder_MarkupCompile.cache
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.g.resources
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.Properties.Resources.resources
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.csproj.GenerateResource.Cache
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\bin\Debug\KinectRecorder.exe
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\bin\Debug\KinectRecorder.pdb
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\bin\Debug\KinectLib.dll
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\bin\Debug\KinectLib.pdb
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.exe
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.pdb

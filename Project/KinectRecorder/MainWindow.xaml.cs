@@ -61,6 +61,10 @@ namespace KinectRecorder
                     }
                 }
             }
+            else
+            {
+                Frames.Clear();
+            }
         }
 
         private void WindowLoaded(object sender, RoutedEventArgs e)
@@ -111,12 +115,18 @@ namespace KinectRecorder
                 DateTime Time = DateTime.Now;
                 Skeleton[] skeletons = new Skeleton[0];
 
+                float[] floor = new float[4];
+
                 using (Microsoft.Kinect.SkeletonFrame skeletonFrame = e.OpenSkeletonFrame())
                 {
                     if (skeletonFrame != null)
                     {
                         skeletons = new Skeleton[skeletonFrame.SkeletonArrayLength];
                         skeletonFrame.CopySkeletonDataTo(skeletons);
+                        floor[0] = skeletonFrame.FloorClipPlane.Item1;
+                        floor[1] = skeletonFrame.FloorClipPlane.Item1;
+                        floor[2] = skeletonFrame.FloorClipPlane.Item1;
+                        floor[3] = skeletonFrame.FloorClipPlane.Item1;
                     }
                 }
                 foreach (Skeleton skel in skeletons)
@@ -130,6 +140,7 @@ namespace KinectRecorder
                         frame.X = skel.Position.X;
                         frame.Y = skel.Position.Y;
                         frame.Z = skel.Position.Z;
+                        frame.Floor = floor;
 
                         foreach (Joint joint in skel.Joints)
                         {

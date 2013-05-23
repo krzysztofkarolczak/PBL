@@ -23,7 +23,7 @@ function A = PreProcessing2()
 	%Project
 	A = ProjectOnPlane(A,Fi);
     
-    finalVector=keyFrameHunter(A,1,(endWithFrame-startWithFrame+1));
+    %finalVector=keyFrameHunter(A,1,(endWithFrame-startWithFrame+1));
     
     figure('units','normalized','outerposition',[0 0 1 1]);
 	pause
@@ -33,13 +33,13 @@ function A = PreProcessing2()
 		DrawSkeleton(A,k,Boundary);
 		pause(0.1);
  		drawnow;
-        el=(finalVector(2,a));
-        if(k==el)
-            pause
-            if a+1<=length(finalVector)
-                a=a+1;
-            end
-        end
+%         el=(finalVector(2,a));
+%         if(k==el)
+%             pause
+%             if a+1<=length(finalVector)
+%                 a=a+1;
+%             end
+%         end
 	end
 	%LeftLegSegment = sqrt((S.LeftHip.X-S.LeftKnee.X).^2 + (S.LeftHip.Y - S.LeftKnee.Y).^2 + (S.LeftHip.Z - S.LeftKnee.Z).^2);
 	%RightLegSegment = sqrt((S.RightHip.X-S.RightKnee.X).^2 + (S.RightHip.Y - S.RightKnee.Y).^2 + (S.RightHip.Z - S.RightKnee.Z).^2);
