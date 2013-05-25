@@ -5,6 +5,11 @@ S = [];
 LoadSkeleton;
 A = SkeletonToArray(S);
 A = FilterPoints(A);
+
+%GetVelocity
+v = [0;diff(A.Skeleton(:,1))];
+a = [0;diff(v)];
+
 A = ShiftToCrotch(A);
 Floor = FindFloorVector(A);
 
@@ -87,12 +92,17 @@ pause
 P_ = zeros(29,2);
 for frame = 1 : C
     P_(:,:) = SkFrames(frame,:,:);
+    subplot(321)
     plot(-P_(:,2),P_(:,1),'b-');
     axis square;
     axis equal;
     xlim([-0.5 0.5]), ylim([-1,1]);
     title(frame)
     drawnow;
+    subplot(312)
+    plot(v(1:frame));
+    subplot(313)
+    plot(a(1:frame));
     %pause(0.1);
 end
 
