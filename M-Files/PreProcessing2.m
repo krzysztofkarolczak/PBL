@@ -7,10 +7,10 @@ function A = PreProcessing2()
 	A = SkeletonToArray(S);
     
     %(frame,coordinate)
-    [startWithFrame, endWithFrame] = computeFrameRange(A, 10, 0.0154, 10, 0.003);  
-
+    %[startWithFrame, endWithFrame] = computeFrameRange(A, 10, 0.0154, 10, 0.003);  
+    startWithFrame = 1; endWithFrame = length(A);
 	%TakePoints
-	A = TakePoints(A,startWithFrame,endWithFrame);
+	%A = TakePoints(A,startWithFrame,endWithFrame);
 	%FilterPoints
 	A = FilterPoints(A);
 	%Get tan(fi) of move direction

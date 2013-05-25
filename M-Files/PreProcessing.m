@@ -6,14 +6,14 @@ S = [];
 LoadSkeleton;
 A = SkeletonToArray(S);
 %TakePoints
-A = TakePoints(A,1280,1387);
+%A = TakePoints(A,1280,1387);
 %FilterPoints
 A = FilterPoints(A);
 %Get tan(fi) of move direction
-    Fi = FindDirection(A.Skeleton);
+    %Fi = FindDirection(A.Skeleton);
 
-    %Fi = diff(A.Skeleton(:,3))./diff(A.Skeleton(:,1));
-    %Fi = [Fi(1,:);Fi];
+    Fi = diff(A.Skeleton(:,3))./diff(A.Skeleton(:,1));
+    Fi = [Fi(1,:);Fi];
 %SkeletonShiftToCrotch
 A = ShiftToCrotch(A);
 %Project

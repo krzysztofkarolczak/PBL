@@ -124,9 +124,9 @@ namespace KinectRecorder
                         skeletons = new Skeleton[skeletonFrame.SkeletonArrayLength];
                         skeletonFrame.CopySkeletonDataTo(skeletons);
                         floor[0] = skeletonFrame.FloorClipPlane.Item1;
-                        floor[1] = skeletonFrame.FloorClipPlane.Item1;
-                        floor[2] = skeletonFrame.FloorClipPlane.Item1;
-                        floor[3] = skeletonFrame.FloorClipPlane.Item1;
+                        floor[1] = skeletonFrame.FloorClipPlane.Item2;
+                        floor[2] = skeletonFrame.FloorClipPlane.Item3;
+                        floor[3] = skeletonFrame.FloorClipPlane.Item4;
                     }
                 }
                 foreach (Skeleton skel in skeletons)
