@@ -60,3 +60,41 @@ C:\Users\Dev\Desktop\package\KinectRecorder\KinectRecorder\obj\x86\Debug\KinectR
 C:\Users\Dev\Desktop\package\KinectRecorder\KinectRecorder\obj\x86\Debug\KinectRecorder.Properties.Resources.resources
 C:\Users\Dev\Desktop\package\KinectRecorder\KinectRecorder\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Dev\Desktop\package\KinectRecorder\KinectRecorder\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.exe
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.pdb
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\bin\Debug\KinectRecorder.exe
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\bin\Debug\KinectRecorder.pdb
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\bin\Debug\KinectLib.dll
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\bin\Debug\KinectLib.pdb
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.csprojResolveAssemblyReference.cache
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\MainWindow.baml
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\App.g.cs
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder_MarkupCompile.cache
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.g.resources
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.Properties.Resources.resources
+C:\Users\Koniu\Desktop\docs\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.csproj.GenerateResource.Cache
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.csprojResolveAssemblyReference.cache
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\MainWindow.baml
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\App.g.cs
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder_MarkupCompile.cache
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.g.resources
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.Properties.Resources.resources
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.csproj.GenerateResource.Cache
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\bin\Debug\KinectRecorder.exe
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\bin\Debug\KinectRecorder.pdb
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\bin\Debug\KinectLib.dll
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\bin\Debug\KinectLib.pdb
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.exe
+C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.pdb
+C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.csprojResolveAssemblyReference.cache
+C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectRecorder\obj\x86\Debug\MainWindow.baml
+C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectRecorder\obj\x86\Debug\MainWindow.g.cs
+C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectRecorder\obj\x86\Debug\App.g.cs
+C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectRecorder\obj\x86\Debug\KinectRecorder_MarkupCompile.cache
+C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.g.resources
+C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.Properties.Resources.resources
+C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.csproj.GenerateResource.Cache
+C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.exe
+C:\Users\nerkon\Desktop\PBL_Kinect\Project\KinectRecorder\obj\x86\Debug\KinectRecorder.pdb

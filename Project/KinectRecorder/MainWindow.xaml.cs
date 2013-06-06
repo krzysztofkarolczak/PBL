@@ -48,15 +48,22 @@ namespace KinectRecorder
                 dlg.CheckPathExists = true;
                 dlg.ShowDialog();
                 String path = dlg.FileName;
-                if (!File.Exists(path))
+                if (path != String.Empty)
                 {
-                    using(FileStream s = File.Create(path));
+                    if (!File.Exists(path))
+                    {
+                        using (FileStream s = File.Create(path)) ;
+                    }
+                    using (FileStream writer = File.OpenWrite(path))
+                    {
+                        IFormatter formatter = new BinaryFormatter();
+                        formatter.Serialize(writer, Frames);
+                    }
                 }
-                using (FileStream writer = File.OpenWrite(path))
-                {
-                    IFormatter formatter = new BinaryFormatter();
-                    formatter.Serialize(writer, Frames);
-                }
+            }
+            else
+            {
+                Frames.Clear();
             }
         }
 
@@ -108,12 +115,18 @@ namespace KinectRecorder
                 DateTime Time = DateTime.Now;
                 Skeleton[] skeletons = new Skeleton[0];
 
+                float[] floor = new float[4];
+
                 using (Microsoft.Kinect.SkeletonFrame skeletonFrame = e.OpenSkeletonFrame())
                 {
                     if (skeletonFrame != null)
                     {
                         skeletons = new Skeleton[skeletonFrame.SkeletonArrayLength];
                         skeletonFrame.CopySkeletonDataTo(skeletons);
+                        floor[0] = skeletonFrame.FloorClipPlane.Item1;
+                        floor[1] = skeletonFrame.FloorClipPlane.Item2;
+                        floor[2] = skeletonFrame.FloorClipPlane.Item3;
+                        floor[3] = skeletonFrame.FloorClipPlane.Item4;
                     }
                 }
                 foreach (Skeleton skel in skeletons)
@@ -127,6 +140,7 @@ namespace KinectRecorder
                         frame.X = skel.Position.X;
                         frame.Y = skel.Position.Y;
                         frame.Z = skel.Position.Z;
+                        frame.Floor = floor;
 
                         foreach (Joint joint in skel.Joints)
                         {
@@ -139,30 +153,28 @@ namespace KinectRecorder
                             frame.Nodes.Add(node);
                         }
                         Frames.Add(frame);
-                    }
-                }
-                if (skeletons.Length > 0)
-                {
-                    Skeleton DisplaySkeleton = skeletons.First();
-                    Joint Crotch = DisplaySkeleton.Joints.First(j => j.JointType == JointType.HipCenter);
-                    if (Crotch != null)
-                    {
-                        DrawingGroup DrawingGroup = new DrawingGroup();
-                        using (DrawingContext Context = DrawingGroup.Open())
+
+                        Skeleton DisplaySkeleton = skel;
+                        Joint Crotch = DisplaySkeleton.Joints.First(j => j.JointType == JointType.HipCenter);
+                        if (Crotch != null)
                         {
-                            Double CrotchDisplayX = image1.Width / 2;
-                            Double CrotchDisplayY = image1.Height / 2;
-
-                            foreach (Joint Node in DisplaySkeleton.Joints)
+                            DrawingGroup DrawingGroup = new DrawingGroup();
+                            using (DrawingContext Context = DrawingGroup.Open())
                             {
-                                double X = (Node.Position.X - Crotch.Position.X) / 2.5 * image1.Width + CrotchDisplayX;
-                                double Y = (-Node.Position.Y + Crotch.Position.Y) / 2.5 * image1.Height + CrotchDisplayY;
-                                Context.DrawEllipse(Brushes.Wheat, new Pen(Brushes.Navy, 2), new Point(X, Y), 7, 7);
-                            }
+                                Double CrotchDisplayX = image1.Width / 2;
+                                Double CrotchDisplayY = image1.Height / 2;
 
+                                foreach (Joint Node in DisplaySkeleton.Joints)
+                                {
+                                    double X = (Node.Position.X - Crotch.Position.X) / 2.5 * image1.Width + CrotchDisplayX;
+                                    double Y = (-Node.Position.Y + Crotch.Position.Y) / 2.5 * image1.Height + CrotchDisplayY;
+                                    Context.DrawEllipse(Brushes.Wheat, new Pen(Brushes.Navy, 2), new Point(X, Y), 7, 7);
+                                }
+
+                            }
+                            DrawingGroup.Freeze();
+                            Dispatcher.Invoke(new Action(() => { image1.Source = new DrawingImage(DrawingGroup); }));
                         }
-                        DrawingGroup.Freeze();
-                        image1.Source = new DrawingImage(DrawingGroup);
                     }
                 }
             }
