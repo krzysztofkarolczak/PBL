@@ -1,0 +1,11 @@
+function Y = GetBezier(Nodes,N)
+
+Nodes = Nodes(:);
+L = length(Nodes);
+
+t = linspace(0,1,N)';
+
+Y = zeros(L,1);
+for k = 1 : L
+    Y = Y + 
+end

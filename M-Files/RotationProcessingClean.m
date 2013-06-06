@@ -28,7 +28,7 @@ C = length(A.Skeleton);
 
 Frames = zeros(C,20,2);
 for frame = 1 : C
-    %FindBackPlane
+    %FindBackPlane - a mo¿e shoulders?
     Back = cross(Floor,A.LeftHip(frame,:)-A.RightHip(frame,:))';
     %FindMovementPlane
     Move = cross(Floor,Back);
@@ -65,7 +65,7 @@ for Segment = 1 : 2 : numel(Boundings)
 end
 
 %FindKeyFramesForASegment
-return
+%return
 
 %PrepareForDrawing
 SkFrames = zeros(C,29,2);
@@ -87,14 +87,14 @@ xlim([-0.5 0.5]), ylim([-1,1]);
 h_t = title('1');  
 pause
 for frame = 2 : C
-    if samples(frame) > 0 
+    %if samples(frame) > 0 
         P_(:,:) = SkFrames(frame,:,:);
         %subplot(321)
         set(h_s,'XData',sign(P_(16,2))*P_(:,2));
         set(h_s,'YData',P_(:,1));
         set(h_t,'String',num2str(frame));
         drawnow;
-    end
+    %end
 %     subplot(312)
 %     plot(v(1:frame));
 %     subplot(313)
