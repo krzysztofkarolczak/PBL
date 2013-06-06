@@ -30,7 +30,7 @@ C = length(A.Skeleton);
 
 Frames = zeros(C,20,2);
 for frame = 1 : C
-    %FindBackPlane
+    %FindBackPlane - a mo¿e shoulders?
     Back = cross(Floor,A.LeftHip(frame,:)-A.RightHip(frame,:))';
     %FindMovementPlane
     Move = cross(Floor,Back);
