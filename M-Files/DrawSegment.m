@@ -1,4 +1,4 @@
-function DrawSegment(S)
+function [Features] = DrawSegment(S)
 
 %FindDistanceBetweenAnckles
 F1 = sum((S(:,19,:)-S(:,11,:)).^2,3);
@@ -53,6 +53,8 @@ xlim([1 size(S,1)]), ylim([0 max(F1)]);
 
 pause
 Extremum = 1;
+cnt=0;
+
 for frame = 2 : size(S,1)
     P_(:,:) = SkFrames(frame,:,:);
     set(h_s,'XData',sign(P_(16,2))*P_(:,2));
@@ -64,6 +66,10 @@ for frame = 2 : size(S,1)
         
         BezierX = GetBezier(Nodes(:,1),100);
         BezierY = GetBezier(Nodes(:,2),100);
+        cnt=cnt+1;
+        Features(cnt,1)=std(BezierX);
+        Features(cnt,2)=std(BezierY);
+        Features(cnt,3)=(std(BezierY).^2+std(BezierX).^2) * 0.5;
         
         set(h_f2,'XData',Extremas(1:Extremum));
         set(h_f2,'YData',F1(Extremas(1:Extremum)));

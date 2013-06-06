@@ -30,7 +30,7 @@ C = length(A.Skeleton);
 
 Frames = zeros(C,20,2);
 for frame = 1 : C
-    %FindBackPlane
+    %FindBackPlane - a mo¿e shoulders?
     Back = cross(Floor,A.LeftHip(frame,:)-A.RightHip(frame,:))';
     %FindMovementPlane
     Move = cross(Floor,Back);
@@ -67,9 +67,7 @@ for Segment = 1 : 2 : numel(Boundings)
 end
 
 %FindKeyFramesForASegment
-out_file=strcat('f_',[filename '.mat']);
-save out_file Segments
-f_name=strcat('run samples/',[filename '.m']);
+f_name=strcat('save f_',[filename '.mat Segments']);
 eval(f_name);
 return
 
@@ -154,7 +152,7 @@ end
 function X = FindFloorVector(A)
 L = size(A.Skeleton,1);
 LF = A.LeftHip;
-RF = A.RightHip;
+RF = A.ShoulderHip;
 X = [RF(:,1) LF(:,1)];
 Y = [RF(:,2) LF(:,2)];
 Z = [RF(:,3) LF(:,3)];

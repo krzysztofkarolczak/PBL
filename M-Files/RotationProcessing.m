@@ -2,7 +2,8 @@ function RotationProcessing()
 close all;
 
 S = [];
-LoadSkeleton;
+f_name=strcat('run samples/grzes.m');
+eval(f_name);
 A = SkeletonToArray(S);
 A = FilterPoints(A);
 
@@ -163,8 +164,8 @@ end
 %%
 function X = FindFloorVector(A)
 L = size(A.Skeleton,1);
-LF = A.LeftAnckle;
-RF = A.RightAnckle;
+LF = A.AnckleHip;
+RF = A.AnckleHip;
 X = [RF(:,1) LF(:,1)];
 Y = [RF(:,2) LF(:,2)];
 Z = [RF(:,3) LF(:,3)];
