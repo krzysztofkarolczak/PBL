@@ -1,4 +1,4 @@
-function Bezierki = DrawSegment(S)
+function Bezierki = DrawSegment2(S)
 
 %FindDistanceBetweenAnckles
 F1 = sum((S(:,19,:)-S(:,11,:)).^2,3);
@@ -36,15 +36,18 @@ Phases(end) = Phases(end-1) + 1;
 if Phases(end) == 5, Phases(end) = 1; end
 
 Bezierki = cell(0);
-zeros(4,3);
 if length(Phases) > 3
     for k = 1 : length(Phases) - 3
         if all(Phases(k:k+3) == unique(Phases(k,k+3)))
-            Beziers = zeros(4,3);
-            Beziers(1,1) = %X;
-            Beziers(1,1) = %X;
-            Beziers(1,1) = %X;
-        
+            for l = 0 : 3
+                Beziers(Phases(k+l),1) = %X;
+                Beziers(Phases(k+l),2) = %Y;
+                Beziers(Phases(k+l),3) = %Mean;
+            end
+            Bezierki{end+1} = Beziers;
+        end
+    end
+end
 
 %subplot(322),hold on;plot(Extremas,F1(Extremas),'ro')
 
