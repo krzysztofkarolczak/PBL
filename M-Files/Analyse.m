@@ -4,7 +4,7 @@ clear all;
 close all;
 
 %X = KrystianIdzieProsto;
-LoadSkeleton;
+run samples/ati.m
 X = SkeletonToArray(S);
 X = FilterPoints(X);
 X = X.Skeleton;
