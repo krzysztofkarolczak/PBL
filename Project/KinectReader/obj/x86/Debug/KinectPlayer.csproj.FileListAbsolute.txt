@@ -69,3 +69,17 @@ C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Pro
 C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectReader\obj\x86\Debug\KinectPlayer.csproj.GenerateResource.Cache
 C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectReader\obj\x86\Debug\KinectReader.exe
 C:\Users\Piotr\Dysk Google\Dokumenty\Studia\II stopień\II rok\I semestr\PBL\Project\KinectReader\obj\x86\Debug\KinectReader.pdb
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\obj\x86\Debug\KinectReader.exe
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\obj\x86\Debug\KinectReader.pdb
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\bin\Debug\KinectReader.exe
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\bin\Debug\KinectReader.pdb
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\bin\Debug\KinectLib.dll
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\bin\Debug\KinectLib.pdb
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\obj\x86\Debug\KinectPlayer.csprojResolveAssemblyReference.cache
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\obj\x86\Debug\MainWindow.baml
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\obj\x86\Debug\App.g.cs
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\obj\x86\Debug\KinectReader_MarkupCompile.cache
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\obj\x86\Debug\KinectReader.g.resources
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\obj\x86\Debug\KinectReader.Properties.Resources.resources
+C:\Users\Bart\Documents\PBL2\Project\KinectReader\obj\x86\Debug\KinectPlayer.csproj.GenerateResource.Cache

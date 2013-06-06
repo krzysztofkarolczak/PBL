@@ -1,11 +1,13 @@
-function Analyse
+function[] = Analyse(filename)
 
 clear all;
 close all;
 
 %X = KrystianIdzieProsto;
-LoadSkeleton;
-X = Skeleton
+run /samples/map1;
+X = SkeletonToArray(S);
+X = FilterPoints(X);
+X = X.Skeleton;
 
 x = [min(X(:,1)) max(X(:,1))];
 p = polyfit(X(:,1),X(:,2),1);
@@ -46,4 +48,11 @@ end
 function X = SkeletonToArray(S)
 f = @(x) cell2mat(struct2cell(x)');
 X = ApplyToSkeleton(f,S);
+end
+function y = ff(x)
+[B,A] = butter(3,0.06);
+y = filtfilt(B,A,x);
+end
+function X = FilterPoints(S)
+X = ApplyToSkeleton(@ff,S);
 end

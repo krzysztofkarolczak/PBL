@@ -37,29 +37,37 @@ namespace KinectReader
 
       private DispatcherTimer Movie;
       private static List<DrawingGroup> MovieFrames;
+        
+
+       public void InitMovieFrames()
+       {
+           MovieFrames = new List<DrawingGroup>();
+           Movie = new DispatcherTimer();
+           Movie.Dispatcher.Thread.Priority = System.Threading.ThreadPriority.AboveNormal;
+           Movie.Interval = TimeSpan.FromMilliseconds(40);
+           Movie.Tick += (s, a) =>
+           {
+               imSkeleton.Source = new DrawingImage(MovieFrames.ElementAt(++CurrentFrame % MovieFrames.Count));
+               if (CurrentFrame == MovieFrames.Count)
+               {
+                   Movie.Stop();
+                   CurrentFrame = 0;
+               }
+           };
+
+       }
 
       public MainWindow()
       {
          InitializeComponent();
-         MovieFrames = new List<DrawingGroup>();
-         Movie = new DispatcherTimer();
-         Movie.Dispatcher.Thread.Priority = System.Threading.ThreadPriority.AboveNormal;
-         Movie.Interval = TimeSpan.FromMilliseconds(40);
-         Movie.Tick += (s, a) =>
-            {
-               imSkeleton.Source = new DrawingImage(MovieFrames.ElementAt(++CurrentFrame % MovieFrames.Count));
-               if (CurrentFrame == MovieFrames.Count)
-               {
-                  Movie.Stop();
-                  CurrentFrame = 0;
-               }
-            };
+         InitMovieFrames();
          
       }
 
       private void bnLoad_Click(object sender, RoutedEventArgs e)
       {
          OpenFileDialog dlg = new OpenFileDialog();
+         InitMovieFrames();
          if (dlg.ShowDialog() == true)
          {
             lbStatus.Content = "Please wait. File loading...";
@@ -163,7 +171,8 @@ namespace KinectReader
          {
             lbStatus.Content = "Please wait. M-File being generated...";
             IEnumerable<SkeletonFrame> ff = Frames.Where(f => f.SkeletonId == (int)cbSkeleton.SelectedValue).Skip(1794).Take(96);
-            SkeletonFrame.ToMFile(Frames.Where(f => f.SkeletonId == (int)cbSkeleton.SelectedValue).ToList(), dlg.FileName);            
+            SkeletonFrame.ToMFile(Frames.Where(f => f.SkeletonId == (int)cbSkeleton.SelectedValue).ToList(), dlg.FileName);
+            lbStatus.Content = "Done!";
          }
       }
 
@@ -202,7 +211,10 @@ namespace KinectReader
       private void cbSkeleton_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
       {
          if (Initialized == false) return;
-         
+         if ((sender as ComboBox).SelectedValue == null)
+         {
+             (sender as ComboBox).SelectedIndex = 0;
+         }
          dpMovieButtons.Visibility = Visibility.Hidden;
          Movie.Stop();
          CurrentFrame = 0;

@@ -1,9 +1,11 @@
-function Segments = RotationProcessingClean
+function Segments = RotationProcessingClean(filename)
 close all;
 
 %ReadData
 S = [];
-LoadSkeleton;
+f_name=strcat('run samples/',[filename '.m']);
+eval(f_name);
+
 A = SkeletonToArray(S);
 A = FilterPoints(A);
 
@@ -65,7 +67,9 @@ for Segment = 1 : 2 : numel(Boundings)
 end
 
 %FindKeyFramesForASegment
-%return
+f_name=strcat('save f_',[filename '.mat Segments']);
+eval(f_name);
+return
 
 %PrepareForDrawing
 SkFrames = zeros(C,29,2);
@@ -147,8 +151,8 @@ end
 %%
 function X = FindFloorVector(A)
 L = size(A.Skeleton,1);
-LF = A.LeftAnckle;
-RF = A.RightAnckle;
+LF = A.LeftHip;
+RF = A.RightHip;
 X = [RF(:,1) LF(:,1)];
 Y = [RF(:,2) LF(:,2)];
 Z = [RF(:,3) LF(:,3)];
