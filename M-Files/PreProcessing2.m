@@ -7,8 +7,8 @@ function A = PreProcessing2()
 	A = SkeletonToArray(S);
     
     %(frame,coordinate)
-    %[startWithFrame, endWithFrame] = computeFrameRange(A, 10, 0.0154, 10, 0.003);  
-    startWithFrame = 1; endWithFrame = length(A);
+    [startWithFrame, endWithFrame] = computeFrameRange(A, 10, 0.0154, 10, 0.003);  
+%     startWithFrame = 1; endWithFrame = length(A); 
 	%TakePoints
 	%A = TakePoints(A,startWithFrame,endWithFrame);
 	%FilterPoints
@@ -152,6 +152,7 @@ function [start,stop] = computeFrameRange(S, startTolerance, startThreshold, end
 
     rFoot = S.RightFoot;
     distance = ones (1,length(S.RightFoot));
+    stopFrame = length(S.RightFoot);
     
 	for k = 1 : length(S.RightFoot)-1
 		distance(k) = sqrt(  power( rFoot(k,1)  -   rFoot(k+1,1),2 )+ power(  rFoot(k,2)  -   rFoot(k+1,2),2 )  +   power(  rFoot(k,3)  -   rFoot(k+1,3),2    )    );
