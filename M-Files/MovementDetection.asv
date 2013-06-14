@@ -14,24 +14,15 @@ t = (0:length(v)-1)/30;
 
 %filter velocity
 Y = FilterPoints(Y);
-X2 = Y.Skeleton;
 
-B = 128;
-E = 250;
 figure('units','normalized','outerposition',[0 0 1 1]);
-plot(-X(B:E,1),X(B:E,3),'b-','linewidth',2); hold on
-plot(-X2(B:E,1),X2(B:E,3),'r-','linewidth',2);
-xlim([min(-X(B:E,1)),max(-X(B:E,1))]);
-ylim([min(X(B:E,3)),max(X(B:E,3))]);
-return
-
-
-
 subplot(211);
 plot(-X(:,1),X(:,3),'b-');
+xlim([min(-X(:,1)),max(-X(:,1))]);
+ylim([min(X(:,3)),max(X(:,3))]);
 axis square;
 subplot(212);
-plot(t,v,'r','linewidth',1);
+plot(t,v,'r','linewidth',2);
 xlim([0,t(end)]);
 ylim([0,max(v)]);
 title('v(t)');

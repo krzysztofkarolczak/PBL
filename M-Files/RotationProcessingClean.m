@@ -69,7 +69,7 @@ end
 %FindKeyFramesForASegment
 f_name=strcat('save f_',[filename '.mat Segments']);
 eval(f_name);
-%return
+return
 
 %PrepareForDrawing
 SkFrames = zeros(C,29,2);

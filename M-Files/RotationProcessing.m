@@ -30,6 +30,7 @@ Floor = FindFloorVector(A);
 
 h = waitbar(0,'Please wait rotating...');
 C = length(A.Skeleton);
+C = 1;
 
 Frames = zeros(C,20,2);
 for frame = 1 : C
@@ -39,18 +40,18 @@ for frame = 1 : C
 
     Move = cross(Floor,Back);
 
-    %dot(Floor,Back)
-    %dot(Floor,Move)
-    %dot(Back,Move)
+    dot(Floor,Back)
+    dot(Floor,Move)
+    dot(Back,Move)
 
-    %[X,Y] = meshgrid(-2:0.1:2);
-    %ZF = -Floor(1)/Floor(3)*X -Floor(2)/Floor(3)*Y;
-    %ZB = -Back(1)/Back(3)*X -Back(2)/Back(3)*Y;
-    %ZM = -Move(1)/Move(3)*X -Move(2)/Move(3)*Y;
+    [X,Y] = meshgrid(-1:0.1:1);
+    ZF = -Floor(1)/Floor(3)*X -Floor(2)/Floor(3)*Y;
+    ZB = -Back(1)/Back(3)*X -Back(2)/Back(3)*Y;
+    ZM = -Move(1)/Move(3)*X -Move(2)/Move(3)*Y;
 
     sk = cell2mat(struct2cell(ApplyToSkeleton(@(x) x(frame,:),A)));
-    %LH = LH - sk(1,:);
-    %RH = RH - sk(1,:);
+    LH = LH - sk(1,:);
+    RH = RH - sk(1,:);
     sk = sk(1:end-1,:);% - repmat(sk(1,:),20,1);
 
     %project on plane Move
@@ -83,23 +84,24 @@ end
 close all;
 figure('units','normalized','outerposition',[0 0 1 1]);
     
-if 0
-    subplot(121)
+if 1
+    %subplot(121)
     hold on;
-    surf(X,Y,ZF,'FaceColor','red','EdgeColor','none'); alpha 0.4;
-    surf(X,Y,ZB,'FaceColor','green','EdgeColor','none'); alpha 0.4;
-    surf(X,Y,ZM,'FaceColor','blue','EdgeColor','none'); alpha 0.4;
-    %plot3(sk(:,1),sk(:,2),sk(:,3),'ro','LineWidth',2);
+    %surf(X,Y,ZF,'FaceColor','black','EdgeColor','none'); alpha 0.3;
+    %surf(X,Y,ZB,'FaceColor','black','EdgeColor','none'); alpha 0.3;
+    surf(X,Y,ZM,'FaceColor','black','EdgeColor','none'); alpha 0.3;
+    plot3(sk(:,1),sk(:,2),sk(:,3),'ro','LineWidth',2);
     %plot3(LH(1),LH(2),LH(3),'k*');
     %plot3(RH(1),RH(2),RH(3),'k*');
-    plot3(sk_p(:,1),sk_p(:,2),sk_p(:,3),'b.','LineWidth',4);
-    plot3([0 F_(1)],[0,F_(2)],[0,F_(3)],'k');
-    plot3([0 B_(1)],[0,B_(2)],[0,B_(3)],'k');
+    %plot3(sk_p(:,1),sk_p(:,2),sk_p(:,3),'b.','LineWidth',4);
+    %plot3([0 F_(1)],[0,F_(2)],[0,F_(3)],'k');
+    %plot3([0 B_(1)],[0,B_(2)],[0,B_(3)],'k');
     axis equal
     
-    subplot(122)
-    plot(-P_(:,2),P_(:,1),'b*');
-    axis equal
+    %subplot(122)
+    %plot(-P_(:,2),P_(:,1),'b*');
+    %axis equal
+    return
 end
 
 P_ = zeros(29,2);
@@ -164,8 +166,8 @@ end
 %%
 function X = FindFloorVector(A)
 L = size(A.Skeleton,1);
-LF = A.AnckleHip;
-RF = A.AnckleHip;
+LF = A.LeftAnckle;
+RF = A.RightAnckle;
 X = [RF(:,1) LF(:,1)];
 Y = [RF(:,2) LF(:,2)];
 Z = [RF(:,3) LF(:,3)];

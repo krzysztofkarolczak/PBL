@@ -1,0 +1,67 @@
+Total samples: 9000
+Total errors: 1059
+Error log:
+Ati          was classified correctly 980 times
+Ati          was misclassified with Bartek       0 times
+Ati          was misclassified with Krzys        0 times
+Ati          was misclassified with Przemek      0 times
+Ati          was misclassified with Piotrek      0 times
+Ati          was misclassified with Grzes        0 times
+Ati          was misclassified with Koniu        0 times
+Ati          was misclassified with dr Sankowski 0 times
+Bartek       was classified correctly 1277 times
+Bartek       was misclassified with Ati          2 times
+Bartek       was misclassified with Krzys        203 times
+Bartek       was misclassified with Przemek      0 times
+Bartek       was misclassified with Piotrek      0 times
+Bartek       was misclassified with Grzes        138 times
+Bartek       was misclassified with Koniu        0 times
+Bartek       was misclassified with dr Sankowski 0 times
+Krzys        was classified correctly 0 times
+Krzys        was misclassified with Ati          0 times
+Krzys        was misclassified with Bartek       304 times
+Krzys        was misclassified with Przemek      0 times
+Krzys        was misclassified with Piotrek      0 times
+Krzys        was misclassified with Grzes        206 times
+Krzys        was misclassified with Koniu        0 times
+Krzys        was misclassified with dr Sankowski 0 times
+Przemek      was classified correctly 1594 times
+Przemek      was misclassified with Ati          0 times
+Przemek      was misclassified with Bartek       0 times
+Przemek      was misclassified with Krzys        0 times
+Przemek      was misclassified with Piotrek      0 times
+Przemek      was misclassified with Grzes        0 times
+Przemek      was misclassified with Koniu        0 times
+Przemek      was misclassified with dr Sankowski 0 times
+Piotrek      was classified correctly 0 times
+Piotrek      was misclassified with Ati          0 times
+Piotrek      was misclassified with Bartek       0 times
+Piotrek      was misclassified with Krzys        0 times
+Piotrek      was misclassified with Przemek      0 times
+Piotrek      was misclassified with Grzes        0 times
+Piotrek      was misclassified with Koniu        0 times
+Piotrek      was misclassified with dr Sankowski 177 times
+Grzes        was classified correctly 1422 times
+Grzes        was misclassified with Ati          0 times
+Grzes        was misclassified with Bartek       29 times
+Grzes        was misclassified with Krzys        0 times
+Grzes        was misclassified with Przemek      0 times
+Grzes        was misclassified with Piotrek      0 times
+Grzes        was misclassified with Koniu        0 times
+Grzes        was misclassified with dr Sankowski 0 times
+Koniu        was classified correctly 1107 times
+Koniu        was misclassified with Ati          0 times
+Koniu        was misclassified with Bartek       0 times
+Koniu        was misclassified with Krzys        0 times
+Koniu        was misclassified with Przemek      0 times
+Koniu        was misclassified with Piotrek      0 times
+Koniu        was misclassified with Grzes        0 times
+Koniu        was misclassified with dr Sankowski 0 times
+dr Sankowski was classified correctly 1561 times
+dr Sankowski was misclassified with Ati          0 times
+dr Sankowski was misclassified with Bartek       0 times
+dr Sankowski was misclassified with Krzys        0 times
+dr Sankowski was misclassified with Przemek      0 times
+dr Sankowski was misclassified with Piotrek      0 times
+dr Sankowski was misclassified with Grzes        0 times
+dr Sankowski was misclassified with Koniu        0 times
